@@ -16,7 +16,7 @@ FastAPI Swagger documentation
 
 1. Clone the Repository
 
-git clone <your-repo-url>
+git clone https://github.com/om999-tech/todolist
 cd <repo-folder>
 
 2. Create a Virtual Environment
