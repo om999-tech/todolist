@@ -1,0 +1,73 @@
+*********Project Overview************
+
+This project is a To-Do List application using Django for the frontend and FastAPI for the backend API.
+
+Features:
+
+Create, Read, Update, Delete tasks
+
+Task fields: title, description, due_date, status
+
+Beautiful, responsive frontend with modal forms
+
+FastAPI Swagger documentation
+
+***Setup & Installation
+
+1. Clone the Repository
+
+git clone <your-repo-url>
+cd <repo-folder>
+
+2. Create a Virtual Environment
+
+Linux / Mac:
+
+python3 -m venv venv
+source venv/bin/activate
+
+***Windows (cmd):
+
+python -m venv venv
+.\venv\Scripts\Activate
+
+3. Install Python Dependencies
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+**Database Setup
+
+1.Create the database
+
+CREATE DATABASE todo_db;
+
+2.Create tasks table:
+
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    due_date DATE,
+    status VARCHAR(50) DEFAULT 'pending'
+);
+
+3.Configure database connection
+
+import mysql.connector
+
+def get_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="your_password",
+        database="todo_db"
+    )
+
+******Start FastAPI Server
+uvicorn api.main:app --reload --port 4000 #(desire port or exclude port)
+
+******Open in Browser:
+
+Frontend: http://127.0.0.1:4000/
+API Docs (Swagger): http://127.0.0.1:4000/api

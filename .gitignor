@@ -1,0 +1,57 @@
+# Python Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables file
+.env
+
+# Virtual environment directories
+venv/
+env/
+
+# Docker
+docker-compose.yml
+Dockerfile
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+
+# FastAPI specific files
+*.log
+
+# Test coverage output
+coverage/
+nosetests.xml
+*.cover
+
+# Pytest cache
+.cache/
+
+# FastAPI static and media files
+static/
+media/
+
+# MySQL, PostgreSQL or other DB files (if you store DB files locally)
+*.sql
+*.sqlite
+
+# .env files for sensitive data like DB credentials or API keys
+*.env
+
+# Files for build tools or deployment
+*.egg
+*.egg-info
+dist/
+build/
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+
+# MacOS or Windows specific files
+.DS_Store
+Thumbs.db
+
